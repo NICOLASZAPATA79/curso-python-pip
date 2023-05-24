@@ -1,0 +1,7 @@
+services:
+  app-csv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes: #Elemento que permite al script estar actualizando los cambios en el contenedor en tiempo real
+     - .:/app

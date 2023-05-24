@@ -1,0 +1,10 @@
+services:
+  web-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes: #Elemento que permite al script estar actualizando los cambios en el contenedor en tiempo real
+     - .:/app
+
+    ports:
+    - '80:80'
